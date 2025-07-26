@@ -1,0 +1,115 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"  style="margin: auto;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="overflow: hidden;">
+
+ <div>
+      <h1 class="container-fluid" style="text-align: center; margin: 20px;">Contact Us</h1>
+ </div>
+
+     <section>
+        <div class="cotainer px-5">
+            <div class="row row-cols-md-2">
+                <div class="col col-12 col-md-6">
+                    <form class="p-5">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="username"
+                                aria-describedby="nameHelp">
+                            <div id="nameHelp" class="form-text">Enter Your Name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="usercell" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control" id="usercell"
+                                aria-describedby="numberHelp">
+                            <div id="numberHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="useremail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="useremail"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="usermessage" class="form-label">Message</label>
+                            <input type="text" class="form-control" id="usermessage">
+                        </div>
+                        <!-- <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div> -->
+                        <button onclick="test()" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col col-12 col-md-6 p-5">
+                    <img class="w-100" src="image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="container">
+
+    <script>
+
+        function test() {
+            var a = document.getElementById('username').value.trim();
+            var b = document.getElementById('usercell').value.trim();
+            var c = document.getElementById('useremail').value.trim();
+            var d = document.getElementById('usermessage').value.trim();
+
+        if(a == "" || b == "" || c == "" || d == "") {
+            window.alert('invalid input');
+        }
+        else {
+            window.alert('success input');
+        }
+        }
+
+    </script>
+
+</section>
+
+</div>
+
+<div class="container">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29069.620944763727!2d88.56933961083982!3d24.391646500000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef2a74af990d%3A0x58f4884b87732342!2sTTC%20Rajshahi!5e0!3m2!1sen!2sbd!4v1753352998036!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
